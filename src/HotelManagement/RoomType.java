@@ -3,8 +3,8 @@ package HotelManagement;
 public class RoomType implements OnSpotCost,OnlineCost {
     String userName;
     int roomType,roomAmount;
-    int cost=0;
-
+//    int cost=0;
+//
     @Override
     public void information(String userName, int roomType, int roomAmount) {
         this.userName=userName;
@@ -13,13 +13,13 @@ public class RoomType implements OnSpotCost,OnlineCost {
         switch (roomType)
         {
             case 1:
-                cost+=1500;
+                Customer.cost+=1500;
                 break;
             case 2:
-                cost+=2500;
+                Customer.cost+=2500;
                 break;
             case 3:
-                cost+=4000;
+                Customer.cost+=4000;
                 break;
 
         }
@@ -27,13 +27,13 @@ public class RoomType implements OnSpotCost,OnlineCost {
     }
 
     @Override
-    public int calculatepriceOnline() {
-        return (cost*roomAmount)/2;
+    public void calculatepriceOnline() {
+        Customer.cost*=roomAmount/2;
     }
 
     @Override
-    public int calculateprice() {
-        return cost*roomAmount;
+    public void calculateprice() {
+        Customer.cost*=roomAmount;
     }
 
 }
