@@ -23,7 +23,7 @@ public class HotelBook {
             {
 
                 System.out.println("What type of room do you want:\n");
-                System.out.println("1.Single\n2.Double\n3.Delux\n");
+                System.out.println("1.Single\n2.Double\n3.Deluxe\n");
                 roomType=input.nextInt();
                 System.out.println("\nHow many rooms do you need:");
                 roomAmount= input.nextInt();
@@ -36,7 +36,7 @@ public class HotelBook {
                 System.out.println("Enter Your Name:");
                 username=input.nextLine();
                 System.out.println("\nWhat type of room do you want:\n");
-                System.out.println("1.Single\n2.Double\n3.Delux\n");
+                System.out.println("1.Single\n2.Double\n3.Deluxe\n");
                 roomType=input.nextInt();
                 System.out.println("\nHow many rooms do you need:");
                 roomAmount= input.nextInt();
@@ -49,7 +49,7 @@ public class HotelBook {
                 System.out.println("Enter Your Name:");
                 username=input.nextLine();
                 System.out.println("\nWhat type of room did you booked:\n");
-                System.out.println("1.Single\n2.Double\n3.Delux\n");
+                System.out.println("1.Single\n2.Double\n3.Deluxe\n");
                 roomType=input.nextInt();
                 System.out.println("\nHow many rooms did you booked:");
                 roomAmount= input.nextInt();
